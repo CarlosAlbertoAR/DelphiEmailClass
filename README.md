@@ -20,19 +20,19 @@ begin
   Email.User          := 'yourmail@yourprovider.com';
   Email.Password      := 'yourpassword';
 
-  # SMTP parameters form sent Emails
+  // SMTP parameters form sent Emails
   Email.SMTP.Host     := 'smtp.yourprovider.com';
   Email.SMTP.Port     := '587';
   Email.SMTP.AuthorizationReq := True or False;
   Email.SMTP.UseTLS   := 0;
   
-  # Imap parameters, for store copie on sent folder (optional)
+  // Imap parameters, for store copie on sent folder (optional)
   Email.IMAP.Host := imap.yourprovider.com;
   Email.IMAP.Port := 143;
   Email.IMAP.StoreFolder := 'sent_folder_name';
   Email.IMAP.SaveToInboxSent := True;
 
-  # Fill email 
+  // Fill email 
   Email.Msg.FromEmail := 'yourmail@yourprovider.com';
   Email.Msg.FromName  := 'You Name';
   Email.Msg.DestEmail := 'emaildest@provider.com';
@@ -43,10 +43,10 @@ begin
   Email.Msg.AttachmentsList.Add('c:\myfolder\log.txt');
   Email.Msg.AttachmentsList.Add('c:\myfolder\image.jpg');  
   
-  # Send, return True or False
+  // Send, return True or False
   Email.SendMail;
   
-  # if Error or sucess return message text
+  // if Error or sucess return message text
   Showmessage(Email.LastMessage);
   
   Email.Free;
