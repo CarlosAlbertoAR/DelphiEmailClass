@@ -1,7 +1,7 @@
 # DelphiSimpleMail
-Only file Pascal/Delphi unit form send mail, easy!
+Only file Pascal/Delphi unit to send mail, easy!
 
-Created using Indy non-visual components
+Created using Indy non-visual classes
 
 # 4 single Steps:
 
